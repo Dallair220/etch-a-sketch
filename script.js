@@ -28,6 +28,6 @@ function createGrid(rows){
 }
 
 function trail(e){
-    e.target.style.background = 'blue';
+    e.target.style.background = 'black';
 }
 
