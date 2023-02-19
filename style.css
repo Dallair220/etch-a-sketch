@@ -1,3 +1,21 @@
-.title{
-    color: blue;
+.container{
+    display: flex;
+    gap: 2px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    gap: 2px;
+}
+
+.square{
+    border: solid blue;
+    aspect-ratio: 1/1;
+    flex: 1;
+}
+
+.square:hover{
+    background-color: blue;
 }
