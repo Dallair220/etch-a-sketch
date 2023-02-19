@@ -1,21 +1,18 @@
 .container{
+    border: solid;
     display: flex;
-    gap: 2px;
-    padding: 10px;
+    gap: 0px;
+    padding: 0px;
     flex-direction: column;
 }
 
 .row{
     display: flex;
-    gap: 2px;
+    gap: 0px;
 }
 
 .square{
-    border: solid blue;
+    /*border: solid blue;*/
     aspect-ratio: 1/1;
     flex: 1;
-}
-
-.square:hover{
-    background-color: blue;
 }
