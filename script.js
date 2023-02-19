@@ -1,13 +1,8 @@
 const container = document.querySelector('.container');
 
-userInput();
+createGrid(50, container);
 
-function userInput(){
-    const rows = prompt('How many rows do you want to have? (less than 100)');
-    rows < 101 ? createGrid(rows) : userInput();
-}
-
-function createGrid(rows){
+function createGrid(rows, container){
     const row = [];
     const square = [];
 
@@ -30,4 +25,17 @@ function createGrid(rows){
 function trail(e){
     e.target.style.background = 'black';
 }
+
+function userInput(){
+    const rows = prompt('How many rows do you want to have? (less than 100)');
+    rows < 101 ? resetGrid(rows) : userInput();
+}
+
+function resetGrid(rows){
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
+    createGrid(rows, container);
+}
+
 
