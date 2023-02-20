@@ -23,7 +23,7 @@ function createGrid(rows, container){
 }
 
 function trail(e){
-    e.target.style.background = 'black';
+    e.target.style.background = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
 }
 
 function userInput(){
