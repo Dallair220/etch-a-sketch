@@ -15,5 +15,5 @@
     /*border: solid blue;*/
     aspect-ratio: 1/1;
     flex: 1;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
